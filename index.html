@@ -30,8 +30,8 @@
   <body>
     <main>
       <header>
-        <nav>
-          <div class="top-logo"></div>
+        <nav class="top-nav">
+          <a href="#hero"><div class="top-logo"></div></a>
           <ul class="top-ul">
             <a href="#" class="top-a"><li>Features</li></a>
             <a href="#" class="top-a"><li>Pricing</li></a>
@@ -44,7 +44,7 @@
       </header>
 
       <!-- === hamburger menu === -->
-       <div class="hamburger-panel hide">
+       <div class="hamburger-panel">
         <div class="panel-wrapper">
 <div class="panel-title">
   <div class="panel-logo"></div>
@@ -67,7 +67,7 @@
 
       <!-- === hero section === -->
 
-      <section class="section-hero">
+      <section class="section-hero" id="hero">
         <div class="hero__text">
           <h1 class="hero__h1">A Simple Bookmark Manager</h1>
           <p class="hero__p">
@@ -99,9 +99,9 @@
 
         <div class="features__tab-wrapper">
           <div class="features-tab-menus">
-            <div class="features__tab-item features__tab-item--active">Simple Bookmarking</div>
-            <div class="features__tab-item features__tab-item--inactive">Speedy Searching</div>
-          <div class="features__tab-item features__tab-item--inactive">Easy Sharing</div>
+            <div class="features__tab-item features__tab-item--active" >Simple Bookmarking</div>
+            <div class="features__tab-item features__tab-item--inactive" >Speedy Searching</div>
+          <div class="features__tab-item features__tab-item--inactive" >Easy Sharing</div>
           </div>
         </div>
 
@@ -122,6 +122,7 @@
         <!-- --- tab2 --- -->
 
              <div class="features__container features__container--2 hide">
+              <div class="pill-shape pill-shape--features"></div>
           <div class="features__img features__img--2"></div>
           <div class="features__text">
             <p class="features__h2 features__h2--left">Intelligent search</p>
@@ -135,10 +136,11 @@
 
             <!-- --- tab3 --- -->
 
-             <div class="features__container features__container--3 hide">
+             <div class="features__container hide features__container--3">
+              <div class="pill-shape pill-shape--features"></div>
           <div class="features__img features__img--3"></div>
           <div class="features__text">
-            <p class="features__h2 features__h2--left">Share your bookmarksh</p>
+            <p class="features__h2 features__h2--left">Share your bookmarks</p>
             <p class="features__p features__p--left">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
 
       <button type="buttn" class="btn btn__blue">More Info</button>
@@ -262,7 +264,7 @@ Frequently Asked Questions
   <!-- --- accordion ends ---- -->
 </div>
 
-    <button type="buttn" class="btn btn__blue">More Info</button>
+    <button type="button" class="btn btn__blue">More Info</button>
       </section>
       
 
@@ -278,13 +280,12 @@ Stay up-to-date with what we’re
       doing
         </h2>
 
-        <form>
+        <form novalidate>
           <div class="input-container">
           <input type="email" placeholder="Enter your email address">
           <small class="hide">Whoops, make sure it's an email</small>
           </div>
-
-          <button type="button" class="btn btn__red" id="contact-btn">Contact Us</button>
+          <button type="submit" class="btn btn__red" id="contact-btn">Contact Us</button>
         </form>
     
       </section>
@@ -297,7 +298,7 @@ Stay up-to-date with what we’re
   
   <nav class="footer-nav">
     <div class="logo-nav">
-    <div class="footer-logo"></div>
+    <a href="#hero"><div class="footer-logo"></div></a>
     <ul class="footer-ul">
       <a href="#" class="footer-a"><li>Features</li></a>
       <a href="#" class="footer-a"><li>Pricing</li></a>
@@ -316,5 +317,6 @@ Stay up-to-date with what we’re
     Coded by KA.
   </div>
 </footer>
+<script src="main.js"></script>
   </body>
 </html>
